@@ -129,4 +129,11 @@ server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
+// Health check route
+server.listen()
+app.get('/', (req, res) => {
+  res.send('Backend is running ✅');
+});
+
+
 module.exports = { app, server, io }; 
